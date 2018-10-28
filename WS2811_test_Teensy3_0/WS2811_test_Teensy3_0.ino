@@ -57,16 +57,16 @@ void setup() {
 #define RED    0xFF0000
 #define GREEN  0x00FF00
 #define BLUE   0x0000FF
-#define YELLOW 0xFFFF00
+#define YELLOW 0xFFFF00 // Okay yellow
 #define PINK   0xFF1088
-#define ORANGE 0xE05800
+#define ORANGE 0xE05800 // Not a very good orange
 #define WHITE  0xFFFFFF
 
 void loop() {
   int microsec = 2000000 / leds.numPixels();  // change them all in 2 seconds
 
   // uncomment for voltage controlled speed
-  // millisec = analogRead(A9) / 40;
+  // int millisec = analogRead(A9) / 40;
 
   colorWipe(RED, microsec);
   colorWipe(GREEN, microsec);
